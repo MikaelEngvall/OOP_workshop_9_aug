@@ -47,7 +47,17 @@ public class Person {
             System.out.println("That book is not available.");
         }
     }
-
+    public String getFullName() {
+        if (firstName.isEmpty() && lastName.isEmpty()) {
+            return "";
+        } else if (lastName.isEmpty()) {
+            return firstName;
+        } else if (firstName.isEmpty()) {
+            return lastName;
+        } else {
+            return firstName + " " + lastName;
+        }
+    }
     // TODO: displayBooks
 
     // *****************

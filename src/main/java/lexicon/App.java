@@ -13,6 +13,9 @@ public class App
 
         // Create book object
         Book book = new Book("Pippi", "Astrid");
+        person.loanBook(book, person);
+//        System.out.println(book.getBorrower().getFullName());
+        System.out.println(book.showPersonWhoBorrowed(book).getFullName());
 
 
     }

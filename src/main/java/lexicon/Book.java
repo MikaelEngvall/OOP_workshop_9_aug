@@ -22,6 +22,7 @@ public class Book {
         setBookId();
         this.available = true;
     }
+
     public Book(String title, String author) {
         this();
         setTitle(title);
@@ -31,8 +32,9 @@ public class Book {
     // *******
     // Methods
     // *******
-
-    // TODO: showPerson
+    public Person showPersonWhoBorrowed(Book book){
+        return book.getBorrower();
+    }
     // TODO: Remove
 
     // *****************
@@ -42,6 +44,7 @@ public class Book {
     public Person getBorrower() {
         return borrower;
     }
+
     public void setBorrower(Person borrower) {
         this.borrower = borrower;
         if (borrower != null) {
