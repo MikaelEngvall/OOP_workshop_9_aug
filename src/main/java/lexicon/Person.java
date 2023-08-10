@@ -6,6 +6,7 @@ public class Person {
     // ***************
     // Instance Fields
     // ***************
+
     private String firstName;
     private String lastName;
     private Integer personId;
