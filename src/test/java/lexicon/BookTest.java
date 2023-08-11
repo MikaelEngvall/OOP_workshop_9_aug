@@ -1,12 +1,8 @@
 package lexicon;
 
+import lexicon.model.Book;
+import lexicon.model.Person;
 import org.junit.Test;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
-import org.junit.runners.Parameterized;
-
-import java.util.UUID;
 
 import static org.junit.Assert.*;
 

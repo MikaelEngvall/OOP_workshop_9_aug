@@ -1,6 +1,4 @@
-package lexicon;
-
-import java.sql.SQLOutput;
+package lexicon.model;
 
 public class Person {
     // ***************
@@ -16,17 +14,15 @@ public class Person {
     // Constructor(s)
     // **************
 
+    // *******
+    // Methods
+    // *******
+
     public Person(String firstName, String lastName) {
         setFirstName(firstName);
         setLastName(lastName);
         borrowedBooks = new String[0];
     }
-
-    // *******
-    // Methods
-    // *******
-
-    // TODO: loanBook
 
     public void loanBook(Book book, Person person) {
         // Throw exception if null
@@ -37,7 +33,6 @@ public class Person {
             (person.getFirstName() == null || person.getFirstName().equals("") ||
             person.getLastName() == null || person.getLastName().equals(""))
             throw new IllegalArgumentException("You must declare a first name and a last name for the borrower");
-//         Print out if available == false
         if (book.isAvailable()) {
             String[] tempArray = new String[borrowedBooks.length + 1];
             tempArray[tempArray.length - 1] = "Author: " + book.getAuthor() + ", Title: " + book.getTitle();

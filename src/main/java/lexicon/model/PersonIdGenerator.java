@@ -1,4 +1,4 @@
-package lexicon;
+package lexicon.model;
 
 public class PersonIdGenerator {
     private static Integer idNumberCounter = 0;
