@@ -31,14 +31,14 @@ public class BookTest {
 
         assertTrue(book.isAvailable());
     }
+
     @Test
-    public void showPersonWhoBorrowedIsTheCorrectBorrower(){
+    public void showPersonWhoBorrowedIsTheCorrectBorrower() {
 
         Person person = new Person("Anders", "Loren");
         Book book = new Book("Pippi", "Astrid");
         person.loanBook(book, person);
 
         assertEquals(book.getBorrower().getFullName(), person.getFullName());
-
     }
 }
