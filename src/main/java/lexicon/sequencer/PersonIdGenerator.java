@@ -1,4 +1,4 @@
-package lexicon.model;
+package lexicon.sequencer;
 
 public class PersonIdGenerator {
     private static Integer idNumberCounter = 0;
@@ -6,5 +6,4 @@ public class PersonIdGenerator {
     public static Integer generateNextIdNumber() {
         return ++idNumberCounter;
     }
-
 }

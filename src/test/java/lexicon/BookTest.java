@@ -2,19 +2,22 @@ package lexicon;
 
 import lexicon.model.Book;
 import lexicon.model.Person;
-import org.junit.Test;
-
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.Test;
+//import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 
 public class BookTest {
 
     @Test
+    @DisplayName("When new book is created, it gets a random book Id")
     public void setBookId() {
         Book book = new Book();
         System.out.println(book.getBookId());
     }
 
     @Test
+    @DisplayName("Prints out all 'book' and 'person' constructor values")
     public void createBookObjectPrintOutWithoutErrors() {
         Person person = new Person("Anders", "Loren");
         Book book = new Book("Pippi", "Astrid");
@@ -24,21 +27,12 @@ public class BookTest {
     }
 
     @Test
-    public void createBookObjectSetsAvailableForThatBookToFalse() {
+    @DisplayName("New book sets it's availability to true")
+    public void createBookObjectSetsAvailableForThatBookToTrue() {
 
         Person person = new Person("Anders", "Loren");
         Book book = new Book("Pippi", "Astrid");
 
-        assertTrue(book.isAvailable());
-    }
-
-    @Test
-    public void showPersonWhoBorrowedIsTheCorrectBorrower() {
-
-        Person person = new Person("Anders", "Loren");
-        Book book = new Book("Pippi", "Astrid");
-        person.loanBook(book, person);
-
-        assertEquals(book.getBorrower().getFullName(), person.getFullName());
+        Assertions.assertTrue(book.isAvailable());
     }
 }

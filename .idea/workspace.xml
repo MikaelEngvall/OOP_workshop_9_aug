@@ -7,11 +7,13 @@
     <list default="true" id="449865d4-dc58-435d-8ea1-75ff1cbf8633" name="Changes" comment="Added showPersonWhoBorrowed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lexicon/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lexicon/App.java" afterDir="false" />
-    </list>
-    <list id="e4950238-74c0-43e5-a62d-8c66a5940e19" name="Changes by AndersLorén" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/lexicon/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lexicon/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lexicon/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lexicon/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lexicon/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lexicon/model/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lexicon/model/PersonIdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lexicon/sequencer/PersonIdGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/lexicon/BookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lexicon/BookTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lexicon/PersonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lexicon/PersonTest.java" afterDir="false" />
     </list>
+    <list id="e4950238-74c0-43e5-a62d-8c66a5940e19" name="Changes by AndersLorén" comment="Changes by AndersLorén" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +28,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "MikaelEngvall"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="685de26a-5898-4a9c-931d-cbbf094c0526" />
+        <option name="url" value="https://github.com/MikaelEngvall/OOP_workshop_9_aug" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectId" id="2TjuJXAlVa2L3BULUElNhfJUKpD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -45,21 +61,8 @@
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.App">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lexicon.App" />
-      <module name="OOP_workshop_9_aug" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lexicon.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BookTest.showPersonWhoBorrowedAndGetFullNameShouldBeFalse (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PersonTest.loanBookAddsToBorrowedBooks">
+    <configuration name="PersonTest.loanBookAddsToBorrowedBooks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OOP_workshop_9_aug" />
       <extension name="coverage">
         <pattern>
@@ -68,14 +71,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="lexicon" />
-      <option name="MAIN_CLASS_NAME" value="lexicon.BookTest" />
-      <option name="METHOD_NAME" value="showPersonWhoBorrowedAndGetFullNameShouldBeFalse(java.lang.String,java.lang.String,java.lang.String,java.lang.String)" />
+      <option name="MAIN_CLASS_NAME" value="lexicon.PersonTest" />
+      <option name="METHOD_NAME" value="loanBookAddsToBorrowedBooks(java.lang.String,java.lang.String,java.lang.String,java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookTest.showPersonWhoBorrowedAndGetFullNameShouldBeFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PersonTest.loanBooksAvailable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OOP_workshop_9_aug" />
       <extension name="coverage">
         <pattern>
@@ -84,14 +87,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="lexicon" />
-      <option name="MAIN_CLASS_NAME" value="lexicon.BookTest" />
-      <option name="METHOD_NAME" value="showPersonWhoBorrowedAndGetFullNameShouldBeFalse(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)" />
+      <option name="MAIN_CLASS_NAME" value="lexicon.PersonTest" />
+      <option name="METHOD_NAME" value="loanBooksAvailable(java.lang.String,java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookTest.showPersonWhoBorrowedAndGetFullNameShouldBeTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PersonTest.loanBooksThrowsIfNullOrEmptyStringInBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OOP_workshop_9_aug" />
       <extension name="coverage">
         <pattern>
@@ -100,14 +103,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="lexicon" />
-      <option name="MAIN_CLASS_NAME" value="lexicon.BookTest" />
-      <option name="METHOD_NAME" value="showPersonWhoBorrowedAndGetFullNameShouldBeTrue(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)" />
+      <option name="MAIN_CLASS_NAME" value="lexicon.PersonTest" />
+      <option name="METHOD_NAME" value="loanBooksThrowsIfNullOrEmptyStringInBook(java.lang.String,java.lang.String,java.lang.String,java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookTest.showPersonWhoBorrowedIsTheCorrectBorrower" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PersonTest.personThrowsIfNullOrEmptyStringInPerson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OOP_workshop_9_aug" />
       <extension name="coverage">
         <pattern>
@@ -116,8 +119,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="lexicon" />
-      <option name="MAIN_CLASS_NAME" value="lexicon.BookTest" />
-      <option name="METHOD_NAME" value="showPersonWhoBorrowedIsTheCorrectBorrower" />
+      <option name="MAIN_CLASS_NAME" value="lexicon.PersonTest" />
+      <option name="METHOD_NAME" value="personThrowsIfNullOrEmptyStringInPerson(java.lang.String,java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonTest.removeBookShouldReturnNullOnRow1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OOP_workshop_9_aug" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lexicon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lexicon" />
+      <option name="MAIN_CLASS_NAME" value="lexicon.PersonTest" />
+      <option name="METHOD_NAME" value="removeBookShouldReturnNullOnRow1(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -125,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
-        <item itemvalue="JUnit.BookTest.showPersonWhoBorrowedIsTheCorrectBorrower" />
-        <item itemvalue="JUnit.BookTest.showPersonWhoBorrowedAndGetFullNameShouldBeFalse (1)" />
-        <item itemvalue="JUnit.BookTest.showPersonWhoBorrowedAndGetFullNameShouldBeFalse" />
-        <item itemvalue="JUnit.BookTest.showPersonWhoBorrowedAndGetFullNameShouldBeTrue" />
+        <item itemvalue="JUnit.PersonTest.loanBookAddsToBorrowedBooks" />
+        <item itemvalue="JUnit.PersonTest.loanBooksAvailable" />
+        <item itemvalue="JUnit.PersonTest.loanBooksThrowsIfNullOrEmptyStringInBook" />
+        <item itemvalue="JUnit.PersonTest.personThrowsIfNullOrEmptyStringInPerson" />
+        <item itemvalue="JUnit.PersonTest.removeBookShouldReturnNullOnRow1" />
       </list>
     </recent_temporary>
   </component>
@@ -149,11 +168,26 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1691676597286</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="Added showPersonWhoBorrowed">
+      <option name="closed" value="true" />
+      <created>1691787601616</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1691787601616</updated>
+    </task>
+    <task id="LOCAL−00003" summary="Changes by AndersLorén">
+      <option name="closed" value="true" />
+      <created>1691787677950</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1691787677950</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added showPersonWhoBorrowed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added showPersonWhoBorrowed" />
+    <MESSAGE value="Changes by AndersLorén" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes by AndersLorén" />
   </component>
 </project>
