@@ -12,7 +12,7 @@ public class App
     public static void main( String[] args ) {
         // Create person object
         Person person = new Person("Anders", "Loren");
-        Person person1 = new Person("Mikael", "Engvall");
+        Person mikael = new Person("Mikael", "Engvall");
 
         // Create book object
         Book book1 = new Book("Pippi", "Astrid");
@@ -23,24 +23,24 @@ public class App
         System.out.println("loanBook method");
         person.loanBook(book1, person);
         person.loanBook(book2, person);
-        person.loanBook(book2, person1); //Mikael försöker låna Millenium men den är inte tillgänglig
-        person.loanBook(book3, person1); //Mikael lånar Karlsson
+        mikael.loanBook(book2, mikael); //Mikael försöker låna Millenium men den är inte tillgänglig
+        mikael.loanBook(book3, mikael); //Mikael lånar Karlsson
 
         System.out.println("\n");
 
         // display books
         System.out.println("displayBooks");
         person.displayBooks(person);
-        person.displayBooks(person1);  // Här får jag ut null, när jag borde få ut Karlsson av Lindgren !!! Eller?
+        mikael.displayBooks(mikael);
 
         System.out.println("\n");
 
 
         // show person
         System.out.println("showPerson");
-        System.out.println(book1.getBorrower().getFullName());
-        System.out.println(book2.getBorrower().getFullName());
-        System.out.println(book3.getBorrower().getFullName()); // Jepp där kommer jag med
+        System.out.println(book1.getTitle() + " borrowed by " + book1.getBorrower().getFullName());
+        System.out.println(book2.getTitle() + " borrowed by " + book2.getBorrower().getFullName());
+        System.out.println(book3.getTitle() + " borrowed by " + book3.getBorrower().getFullName());
 
         System.out.println("\n");
 

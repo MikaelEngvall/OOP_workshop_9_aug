@@ -47,8 +47,9 @@ public class Person {
             tempArray[tempArray.length - 1] =  book.getTitle() + "," + book.getAuthor();
             person.setBorrowedBooks(tempArray); // tempArray copied over to new list of borrowed books
             book.setBorrower(person); // person can now be identified as borrower
+            System.out.println(book.getTitle() + " by " + book.getAuthor() + " is borrowed by " + person.getFullName());
         } else {
-            System.out.println("That book is not available.");
+            System.out.println(book.getTitle() + " by " + book.getAuthor() + " is not available.");
         }
     }
     public String getFullName() {
